@@ -1,5 +1,10 @@
 'use strict';
 
+alert('Отправить запрос');
+setTimeout(() => {
+  alert('Запрос выполнен')
+}, 7000);
+
 const loaderJsSpan1 = document.querySelector('.loader-js__span-1');
 
 let timerId1 = setTimeout(function moveLoaderJsSpan1() {
