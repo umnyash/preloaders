@@ -1,0 +1,91 @@
+div {
+  width: 200px;
+  height: 200px;
+  margin: 0 0 100px;
+}
+
+p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.loader-svg {
+  color: transparent !important;
+  background-image: url("loader.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 60%;
+}
+
+.loader-css {
+  position: relative;
+}
+
+.loader-css__span,
+.loader-css::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: grey;
+  transform: translateX(-50%);
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.loader-css__span {
+  top: 50%;
+  background-color: black;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.loader-js {
+  position: relative;
+}
+
+.loader-js__span-1,
+.loader-js__span-2 {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: blue;
+  transform: translateX(-50%);
+}
+
+.loader-js__span-1 {
+  transition: 1s;
+  transition-timing-function: linear;
+}
+
+.loader-js__span-2 {
+  top: 50%;
+  background-color: red;
+}
+
+.loader-js__span-1--position-2 {
+  left: 100%;
+}
+
+.loader-gif__img {
+  max-width: 100%;
+  height: auto;
+}

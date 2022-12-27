@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Прелоадеры</title>
+  </head>
+  <body>
+    <p>svg-фигуры и css-анимация<p>
+    <div class="loader-svg"></div>
+    
+    <p>Пседоэлемент (серый), тег span (черный), css-анимация<p>
+    <div class="loader-css">
+      <span class="loader-css__span"></span>
+    </div>
+    
+    <p>У синего круга тоглится класс, который меняет значение left с 0 на 100, задан плавный переход<p>
+    <p>У красного круга постоянно меняется координата left в атрибуте style с помощью setTimeout()<p>
+    <div class="loader-js">
+      <span class="loader-js__span-1 loader-js__span-1--position-2"></span>
+      <span class="loader-js__span-2"></span>
+    </div>
+    
+    <p>Гифка</p>
+    <div class="loader-gif">
+      <img class="loader-gif__img" src="reload-cat.gif" width="200" height="200">
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
